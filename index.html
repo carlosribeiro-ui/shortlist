@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortlist - Hiring Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: black;
+        }
+
+        .selection-red::selection {
+            background-color: #dc2626;
+            color: white;
+        }
+
+        @keyframes pulse-custom {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 0.4; }
+        }
+        .animate-pulse-custom {
+            animation: pulse-custom 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body class="selection-red text-white min-h-screen pb-12">
+
+    <header class="sticky top-0 z-50 bg-black/95 backdrop-blur-md border-b-2 border-red-600 p-6 shadow-2xl">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl md:text-3xl font-black italic tracking-tighter uppercase text-white leading-none">
+                    SHORTLIST <span class="text-red-600 underline decoration-2 underline-offset-8">HIRING EXPERIENCE</span>
+                </h1>
+                <p class="text-[10px] tracking-[0.2em] uppercase text-zinc-500 font-bold mt-2 font-mono">
+                    > Pessoas que performam, negócios que escalam.
+                </p>
+            </div>
+            <div class="text-right">
+                <div class="text-red-600 font-black text-2xl tracking-tighter italic leading-none whitespace-nowrap">REDHUNTERS</div>
+                <div class="text-white text-[9px] font-bold tracking-[0.3em] uppercase opacity-50">Headhunting Division</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-6 pt-12">
+        
+        <div id="process-summary" class="mb-12 space-y-6">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="h-8 w-1 bg-red-600"></div>
+                <h2 class="text-xl font-black uppercase tracking-widest text-white">Resumo do Processo</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-zinc-900/40 border border-zinc-800 p-5 rounded-lg flex items-center justify-between group hover:border-red-600/40 transition-colors">
+                    <div>
+                        <p class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest mb-1">Candidatos Presentes</p>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-3xl font-black text-white">49</span>
+                            <span class="text-[10px] text-zinc-600 font-medium uppercase tracking-tighter">Dias 23 e 24/01</span>
+                        </div>
+                    </div>
+                    <div class="text-red-600 bg-red-600/10 p-3 rounded-full group-hover:bg-red-600 group-hover:text-white transition-all">
+                        <i data-lucide="users" size="20"></i>
+                    </div>
+                </div>
+                <div class="bg-zinc-900/40 border border-zinc-800 p-5 rounded-lg flex items-center justify-between group hover:border-red-600/40 transition-colors">
+                    <div>
+                        <p class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest mb-1">Total Aprovados</p>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-3xl font-black text-white">25</span>
+                            <span class="text-[10px] text-zinc-600 font-medium uppercase tracking-tighter">Shortlist Final</span>
+                        </div>
+                    </div>
+                    <div class="text-red-600 bg-red-600/10 p-3 rounded-full group-hover:bg-red-600 group-hover:text-white transition-all">
+                        <i data-lucide="check-circle-2" size="20"></i>
+                    </div>
+                </div>
+                <div class="bg-zinc-900/40 border border-zinc-800 p-5 rounded-lg flex items-center justify-between group hover:border-red-600/40 transition-colors">
+                    <div>
+                        <p class="text-[10px] uppercase font-bold text-zinc-500 tracking-widest mb-1">Taxa de Aprovação</p>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-3xl font-black text-white">51%</span>
+                            <span class="text-[10px] text-zinc-600 font-medium uppercase tracking-tighter">Nível de Exigência Alto</span>
+                        </div>
+                    </div>
+                    <div class="text-red-600 bg-red-600/10 p-3 rounded-full group-hover:bg-red-600 group-hover:text-white transition-all">
+                        <i data-lucide="trending-up" size="20"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-[#0a0a0a] border border-zinc-800 rounded-lg p-6">
+                <h3 class="text-[10px] uppercase font-black text-zinc-500 tracking-widest mb-6 flex items-center gap-2">
+                    <i data-lucide="target" class="text-red-600" size="14"></i> Distribuição por Cadeira
+                </h3>
+                <div class="flex flex-col md:flex-row gap-8 md:gap-16">
+                    <div class="flex-1">
+                        <div class="flex justify-between items-end mb-2">
+                            <span class="text-sm font-black uppercase text-white tracking-tighter">BDR</span>
+                            <span class="text-lg font-black text-red-600 leading-none">3</span>
+                        </div>
+                        <div class="w-full h-1 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-red-600" style="width: 12%"></div>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex justify-between items-end mb-2">
+                            <span class="text-sm font-black uppercase text-white tracking-tighter">SDR</span>
+                            <span class="text-lg font-black text-red-600 leading-none">8</span>
+                        </div>
+                        <div class="w-full h-1 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-red-600" style="width: 32%"></div>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex justify-between items-end mb-2">
+                            <span class="text-sm font-black uppercase text-white tracking-tighter">CLOSER</span>
+                            <span class="text-lg font-black text-red-600 leading-none">14</span>
+                        </div>
+                        <div class="w-full h-1 bg-zinc-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-red-600" style="width: 56%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="candidates-container" class="flex flex-col gap-4">
+            </div>
+    </main>
+
+    <footer class="mt-20 p-12 text-center border-t border-zinc-900 bg-[#050505]">
+        <p class="text-[10px] text-zinc-600 tracking-[0.6em] uppercase font-bold whitespace-nowrap">Confidencial • Redhunters Hiring Experience • 2024</p>
+    </footer>
+
+    <script>
+        const candidates = [
+            {
+                nome: "Thainá Raíssa Romanatto Martins",
+                cargo: "CLOSER",
+                foto: "https://drive.google.com/file/d/1TOt81j1CKIc18WAMUw7nD_Zcrkze1GCt/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/thain%C3%A1-romanatto-bb319b168/",
+                pitch: "BOM",
+                labelPocket: "https://drive.google.com/file/d/1NyvovfGOO2DIBqljcCdRjV-7D3Wsyx6H/view?usp=sharing",
+                fit: 3,
+                destaque: false,
+                avaliacao: "Perfil com boa presença comercial e experiências relevantes em vendas. Demonstra potencial em contextos que ofereçam maior autonomia. Como ponto de atenção, apresenta desalinhamento estratégico com o modelo V4 por priorizar empreendedorismo paralelo e buscar flexibilidade de agenda, contrastando com a dedicação integral e rotina estruturada exigida na cadeira PJ.",
+                tags: ["Boa Presença", "Vendas Relevantes", "Perfil Empreendedor", "Atenção: Flexibilidade"]
+            },
+            {
+                nome: "Thamiris Rodrigues Costa - Victoria",
+                cargo: "SDR",
+                foto: "https://drive.google.com/file/d/1AuXyPfsDjRmp94YLz40J_sOJaPOSJGfL/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/thamirisrodriguescosta/",
+                pitch: "BOM",
+                labelPocket: "https://drive.google.com/file/d/1-0NT_-dJYVzOP65A00ZTCgynR_4hNdDh/view?usp=sharing",
+                fit: 5,
+                destaque: true,
+                avaliacao: "A candidata demonstra excelente alinhamento com Ownership e GTM to Learn Faster. Possui trajetória marcada por assunção de riscos e aprendizado prático. Tecnicamente, tem experiência real em prospecção ativa via Social Selling (Instagram) e rotina de hunter. Apresenta abertura a feedback, necessitando apenas alinhamento quanto à cultura de alta pressão e decisões guiadas por dados.",
+                tags: ["Ownership", "GTM to Learn Faster", "Social Selling", "Hunter", "Aprendizado Prático"]
+            },
+            {
+                nome: "João Victor Andreazzi Amarante",
+                cargo: "SDR",
+                foto: "https://drive.google.com/file/d/1bQ8iiECEZ2WHhGIv0mFs1Ot7nTHCYNzG/view?usp=sharing",
+                linkedin: "https://drive.google.com/file/d/1iAPCX47hSM7Mf3EUFrd7AjgprIitmRAr/view?usp=sharing",
+                pitch: "Não aplicável no dia",
+                labelPocket: "https://drive.google.com/file/d/1fyt1LhzZ4xL3G9jx-7u7r9c8kKTBTrs0/view?usp=sharing",
+                fit: 4,
+                destaque: false,
+                avaliacao: "Aprovado para: BDR. João demonstra boa base comercial, perfil comunicativo e competitivo. Experiência em vendas B2C com boa leitura de dor do cliente. Perfil promissor para atuação com prospecção e qualificação, com potencial de evolução estruturada dentro do funil de vendas B2B da V4.",
+                tags: ["Promissor", "Vendas B2C", "Perfil Competitivo", "Leitura de Dor", "Aprovado BDR"]
+            },
+            {
+                nome: "Karina Sala",
+                cargo: "BDR",
+                foto: "https://drive.google.com/file/d/1_4IdQK23pcUrU-8dXCo2VRgL_9Ys34P_/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/karina-sala-8668112b/",
+                pitch: "BOM",
+                labelPocket: "https://drive.google.com/file/d/1j9Z30qcpH7krA1DHSxWc6hyYdHck7ULv/view?usp=sharing",
+                fit: 5,
+                destaque: true,
+                avaliacao: "Candidata de 42 anos com forte compatibilidade cultural e bagagem técnica sólida (SPIN/BANT). Foi responsável por estruturar e implementar o time de BDR em sua atuação atual. Demonstra ambição financeira elevada e alta capacidade de lidar com pressão. Perfil maduro e resiliente.",
+                tags: ["SPIN Selling", "BANT", "Estruturação de Time", "Perfil Maduro", "Alta Pressão"]
+            },
+            {
+                nome: "Adriana José da Silva",
+                cargo: "SDR",
+                foto: "https://drive.google.com/file/d/1kRRMaB3QvRkiJsO4SOsu7y8-qWiSGmFT/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/adriana-silva-4b1793224/",
+                pitch: "POTENCIAL",
+                labelPocket: "Não aplicável",
+                fit: 5,
+                destaque: false,
+                avaliacao: "Adriana possui o perfil ideal para as exigências da cadeira, destacando-se pelo histórico em reconciliação. Não possui perfil agressivo; mostra-se paciente, empática e responsável. Por essas características, atende plenamente tanto à cadeira de Closer de Ativação quanto à de Account Management.",
+                tags: ["Perfil Ideal", "Paciência", "Empatia", "Responsável", "Versatilidade"]
+            },
+            {
+                nome: "Mylena da Silva Sabino",
+                cargo: "BDR",
+                foto: "https://drive.google.com/file/d/1Zwe0o-sN_OrEjWzdTc1uNtBkxxb8biIm/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/mylenasabino/",
+                pitch: "POTENCIAL",
+                labelPocket: "Não aplicável",
+                fit: 4,
+                destaque: false,
+                avaliacao: "Mylena (23 anos) estuda Comércio Exterior e possui 3 experiências comerciais que lhe deram boa noção de funil de vendas. Demonstra ownership e resiliência emocional, enxergando a V4 como plataforma de aprendizado. Possui facilidade em lidar com feedbacks e aprendizado rápido, tendo reativado contas importantes em experiências passadas. Necessita alinhamento sobre cultura de metas agressivas.",
+                tags: ["Funil de Vendas", "Resiliência Emocional", "Aprendizado Rápido", "Ownership"]
+            },
+            {
+                nome: "Filipe Augusto",
+                cargo: "SDR",
+                foto: "https://drive.google.com/file/d/1XhvhTLJKmHp3BbSm_3A7dof7dnNt09nz/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/filipe-augusto-942b4a310/",
+                pitch: "POTENCIAL",
+                labelPocket: "Não Aplicável",
+                fit: 4,
+                destaque: false,
+                avaliacao: "Candidato com alto potencial comportamental e comunicacional, demonstrando ambição clara e vontade genuína de crescimento. Indicado para desenvolvimento como SDR Júnior para suprir a atual ausência de experiência técnica em Inside Sales B2B estruturado.",
+                tags: ["Potencial Comportamental", "SDR Júnior", "Comunicação Alta", "Ambição"]
+            },
+            {
+                nome: "Nathan Rodrigues da Silva",
+                cargo: "SDR",
+                foto: "https://drive.google.com/file/d/1bCh7HGm8NkGL8z1DpkmB_kM0wKY2K4RY/view?usp=sharing",
+                linkedin: "https://drive.google.com/file/d/1C6LIud65Qg4ecDMmFSeXkMSxyMkN0W2h/view?usp=sharing",
+                pitch: "POTENCIAL",
+                labelPocket: "Não aplicável",
+                fit: 5,
+                destaque: false,
+                avaliacao: "Nathan (35 anos) possui background técnico em Eletrotécnica e Engenharia. Atua em vendas complexas B2B desde 2022, participando de todo o ciclo: diagnóstico à negociação de alto ticket. Culturalmente, apresenta fit forte com a V4: ownership alto, sede de evolução ('1% ao dia') e resiliência a feedbacks. Ponto de atenção: perfil workaholic e expectativa de crescimento muito acelerada.",
+                tags: ["Background Técnico", "Vendas Complexas B2B", "Ownership Alto", "Orientado a Performance"]
+            },
+            {
+                nome: "Wellington Elias",
+                cargo: "SDR",
+                foto: "https://drive.google.com/file/d/16oI3ukVAeTYDKjRAiP8PDLpsdIvYZ2Q7/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/wellelias/",
+                pitch: "POTENCIAL",
+                labelPocket: "https://drive.google.com/file/d/1t_dDHghYFXmN0gN23JyL3UuAilkmG_dY/view?usp=sharing",
+                fit: 4,
+                destaque: false,
+                avaliacao: "Forte alinhamento com Ownership e High Standards. Demonstra responsabilidade financeira, coragem para empreender e foco em resultado real (DRE). Resiliente a feedbacks e pressão. Possui experiência técnica completa no ciclo de vendas (prospecção ao pós-venda), especialmente em seguros e consórcios. Discurso de autovalorização elevado que exige validação prática na cultura V4.",
+                tags: ["Ownership", "High Standards", "Resiliência", "Vendas Consultivas", "Ciclo Completo"]
+            },
+            {
+                nome: "Eduardo Zambiasi Neto",
+                cargo: "CLOSER",
+                foto: "https://drive.google.com/file/d/1le16YAWKqz581NyIiQ94bKxtBKKUC2Hg/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/eduardo-neto-84508266/",
+                pitch: "POTENCIAL",
+                labelPocket: "Não aplicável",
+                fit: 4,
+                destaque: false,
+                avaliacao: "Eduardo possui vasto contexto e vivência em vendas. Perfil maduro que se identificou com a transparência da cultura V4. Demonstra forte desejo de aprender e crescer em uma empresa que valoriza seus investidores. Ponto de atenção: validar se o interesse é genuíno no projeto ou apenas busca por recolocação, e adaptabilidade à liderança jovem.",
+                tags: ["Contexto em Vendas", "Perfil Maduro", "Fit V4", "Foco em Crescimento"]
+            },
+            {
+                nome: "Júlia Lorca Reis",
+                cargo: "CLOSER",
+                foto: "https://drive.google.com/file/d/1dfNQBWIdEr4NMCduKVJWmQgtFmF7esYW/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/julia-lorca/",
+                pitch: "Muito bom",
+                labelPocket: "Não aplicável",
+                fit: 4,
+                destaque: true,
+                avaliacao: "Demonstra excelente comunicação e maturidade no trato com clientes de alto ticket. Experiência sólida em vendas consultivas e técnicas (área jurídica). Apesar de não possuir o perfil agressivo nativo da V4, possui as habilidades necessárias para performar bem através de treinamento. Busca crescimento profissional e novas oportunidades de carreira.",
+                tags: ["Vendas Consultivas", "High Ticket", "Comunicação Premium", "Maturidade Comercial"]
+            },
+            {
+                nome: "Gerson Lopes",
+                cargo: "CLOSER",
+                foto: "https://drive.google.com/file/d/1cDOswJzeSCHtNVuTGy7OshhbL9Ub1A9J/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/gerson-lopes-25661a72/",
+                pitch: "BOM",
+                labelPocket: "Não Aplicável",
+                fit: 4,
+                destaque: true,
+                avaliacao: "35 anos com perfil maduro e focado em evolução financeira e qualidade de vida. Possui 6 anos de experiência em vendas B2B e atua como diretor comercial, cuidando de processos e treinamento. Demonstra alta disciplina pessoal, ownership e adaptabilidade. Perfil consistente, organizado e com excelente visão de liderança para ambientes estruturados.",
+                tags: ["Diretor Comercial", "6 anos B2B", "Visão de Processo", "Ownership", "Foco em Mérito"]
+            },
+            {
+                nome: "Diego Luis de Abreu",
+                cargo: "CLOSER",
+                foto: "https://drive.google.com/file/d/1shCmI0EUxS3j-ItxS7sqwtnxOir48laR/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/diego-abreu-74a7b843/",
+                pitch: "BOM",
+                labelPocket: "Não aplicável",
+                fit: 5,
+                destaque: true,
+                avaliacao: "Profissional de 40 anos com 8 anos de experiência em vendas. Possui histórico robusto em vendas externas e passagem pela Ambev, o que confere disciplina e casca comercial sob pressão. Busca novos desafios por falta de crescimento na cadeira atual. Perfil resiliente, com boa gestão emocional e fit inicial positivo para ambientes de alta exigência.",
+                tags: ["8 anos Vendas", "Ex-Ambev", "Resiliência", "Disciplina", "Foco em Resultados"]
+            },
+            {
+                nome: "Oscar de carvalho Neto",
+                cargo: "CLOSER",
+                foto: "https://drive.google.com/file/d/1D3gFQEbVLrXEHuOD7-6JWUzDjR1dYqvc/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/oscar-neto-024ba0165/",
+                pitch: "BOM",
+                labelPocket: "https://drive.google.com/file/d/17hkd7BDe0C3WXcXSBvGJoelr12ESMYhI/view?usp=sharing",
+                fit: 5,
+                destaque: true,
+                avaliacao: "Perfil comercial com alta energia e ownership. Domina o processo completo: prospecção, proposta técnica e follow-up. Após longa experiência buscando estabilidade, hoje demonstra sede por crescimento e ganhos agressivos. Fit cultural fortíssimo com a V4, focado em desafios e reconhecimento.",
+                tags: ["Ownership Alto", "Energia Alta", "Fit V4", "Vendas Externas", "Ambição"]
+            },
+            {
+                nome: "Bruna Macedo Santos",
+                cargo: "CLOSER",
+                foto: "https://drive.google.com/file/d/1OnftlDtKJ_X1t6HVJPcm-l7FYutFXRdR/view?usp=sharing",
+                linkedin: "https://drive.google.com/file/d/1aJVdjB5gbhntifNarVPhPyLYFQilMNfP/view?usp=sharing",
+                pitch: "Muito bom",
+                labelPocket: "Não Aplicável",
+                fit: 5,
+                destaque: true,
+                avaliacao: "Profissional de 28 anos com experiência completa no ciclo de vendas e histórico consistente de resultados. Perfil altamente ambicioso, orientado a metas agressivas e com forte ownership. Demonstra excelente inteligência emocional, resiliência e abertura para feedbacks. Possui elevado fit com a cultura V4, valorizando alta performance e meritocracia.",
+                tags: ["Ciclo Completo", "Alta Performance", "Foco em Metas", "Resiliência", "Resultados Consistentes"]
+            },
+            {
+                nome: "Lilian Alves do Carmo",
+                cargo: "CLOSER",
+                foto: "https://drive.google.com/file/d/1bX2x4JjLTFci5s4N91slUuJMMRbsNnuY/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/lilianalvesdocarmo/",
+                pitch: "Não aplicável no dia",
+                labelPocket: "Não aplicável",
+                fit: 5,
+                destaque: false,
+                avaliacao: "Perfil muito alinhado a vendas consultivas e geração de valor. Demonstra forte interesse em entender profundamente as necessidades do cliente, conduzindo o fechamento a partir da dor real. Apresenta ambição, vontade de crescer e assumir ownership. Mostra maturidade emocional e conforto com negociações difíceis.",
+                tags: ["Vendas Consultivas", "Geração de Valor", "Maturidade Emocional", "Ambição", "Ownership"]
+            },
+            {
+                nome: "Jonathan Silva De Paula",
+                cargo: "CLOSER (SÊNIOR)",
+                foto: "https://drive.google.com/file/d/1T07LqLMzxLtUlOpc5-E6f197YnOKYoYy/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/jonathan-de-paula-66485051/",
+                pitch: "Não aplicável no dia",
+                labelPocket: "https://drive.google.com/file/d/1I8OfkWFfuH4_fEeM1CJ8yMgX7eqrfFLf/view?usp=sharing",
+                fit: 5,
+                destaque: true,
+                idiomas: "MBA Mark. Digital e Gestão",
+                avaliacao: "Candidato com forte aderência ao nível Sênior. Demonstra domínio completo do funil de vendas e negociações consultivas (SPIN/BANT). Possui mais de 10 anos de experiência em vendas B2B sob alta pressão, sustentando taxas de conversão de 30–35%. Formado em Administração com MBA em Marketing Digital.",
+                tags: ["Step Sênior", "10+ anos Vendas", "B2B Expert", "Conversão 35%", "Gestão de Pipeline"]
+            },
+            {
+                nome: "Paula Araújo de Oliveira",
+                cargo: "CLOSER",
+                foto: "https://drive.google.com/file/d/16vYGLpk1ttlNkkrq6XOLrexQ0iz6uZOQ/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/paula-araujo-de-oliveira-199b1366/",
+                pitch: "Não aplicável no dia",
+                labelPocket: "https://drive.google.com/file/d/1yVmkQBGx8LirMX7HBkXZQ8CopyIC5Ufh/view?usp=sharing",
+                fit: 4,
+                destaque: false,
+                avaliacao: "Paula demonstrou altíssima motivação e busca por crescimento real na carreira. Possui bagagem em vendas B2B e perfil de alta energia. Identificou-se fortemente com a cultura V4 e busca ambientes colaborativos e dinâmicos (com 'barulho'). Atualmente trabalha solo e busca escala. Perfil enviado para doublecheck das lideranças devido ao potencial de engajamento.",
+                tags: ["Alta Energia", "Vendas B2B", "Cultura V4", "Motivada"]
+            },
+            {
+                nome: "Ariane Ester Filier",
+                cargo: "CLOSER",
+                foto: "https://drive.google.com/file/d/1X65F8U4ckgxRUJwSIVPnA_KDPZ6CH4sA/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/ariane-ester-filier-900ba6188/",
+                pitch: "Não aplicável no dia",
+                labelPocket: "Não aplicável",
+                fit: 4,
+                destaque: false,
+                avaliacao: "Candidata com perfil comercial e comunicação empática. Demonstra conforto em prospecção ativa e reuniões de diagnóstico focadas em valor. Valoriza o modelo 100% presencial e possui postura consultiva, entendendo o fechamento como geração de clareza e segurança para o cliente. Apresenta boa base comportamental e alto potencial de crescimento.",
+                tags: ["Comunicação Empática", "Postura Consultiva", "Prospecção Ativa", "Foco em Valor"]
+            },
+            {
+                nome: "Leandro Lorenzetti Medola",
+                cargo: "CLOSER",
+                foto: "https://drive.google.com/file/d/1lWoGbX-nCdU_y5nS2_2mB8vnjLzrqCjs/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/leandro-lorenzetti-a558022b0/",
+                pitch: "Não aplicável no dia",
+                labelPocket: "Não aplicável no dia",
+                fit: 5,
+                destaque: true,
+                idiomas: "Inside Sales / SDR + Closer",
+                avaliacao: "Apesar da pouca idade, Leandro surpreende pela maturidade comercial e bagagem técnica. Atuou como Assessor de Investimentos lidando com tickets de até R$ 1,5 milhão. Domina CRM, visão de pipeline e quebra de objeções técnica. Possui um ownership fortíssimo, colocando-se como responsável direto pelo resultado do cliente e buscando excelência constante.",
+                tags: ["Maturidade Alta", "Inside Sales", "Ticket Alto (1.5M)", "Ownership", "Certificação Ancord"]
+            },
+            {
+                nome: "Felipe Paraizo da Silva",
+                cargo: "SDR",
+                foto: "https://drive.google.com/file/d/1lCwyGElWzhZe3FwdOVJkGHHl5uLNoafp/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/fpsparaizo/",
+                pitch: "Não aplicável no dia",
+                labelPocket: "Não aplicável",
+                fit: 4,
+                destaque: false,
+                avaliacao: "25 anos com forte senso de responsabilidade e foco familiar. Trajetória marcada por esforço, resiliência e disciplina. Atualmente atua como coordenador de times e possui vivência empreendedora na área de eletrônicos. Demonstra alto interesse por aprendizado contínuo e evolução emocional. Perfil com boa maturidade para desenvolvimento em vendas.",
+                tags: ["Responsabilidade", "Resiliência", "Disciplina", "Coordenação", "Perfil Empreendedor"]
+            },
+            {
+                nome: "Luana Alves De Abrantes",
+                cargo: "BDR",
+                foto: "",
+                linkedin: "https://drive.google.com/file/d/1FiwXUEPsbjrR6Ggh8vUxApnXumPgdy99/view?usp=sharing",
+                pitch: "Não aplicável no dia",
+                labelPocket: "Não aplicável no dia",
+                fit: 4,
+                destaque: false,
+                avaliacao: "Bom perfil para assessoria de vendas. Possui experiência com Full Funnel e demonstra bom domínio de técnicas e métricas de conversão. Atuou 7 anos como líder comercial em venda de precatórios. Apresenta postura assertiva e firme quanto a diretrizes, o que demonstra senso de posicionamento e compromisso com processos.",
+                tags: ["Líder Comercial", "Full Funnel", "Assertiva", "Venda de Precatórios"]
+            },
+            {
+                nome: "Thiago Pego Braga",
+                cargo: "CLOSER",
+                foto: "https://drive.google.com/file/d/1TGlIN80lmmep1Iw4fO16qBFyRPn1jUWW/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/thpbraga/",
+                pitch: "Não aplicável no dia",
+                labelPocket: "https://drive.google.com/file/d/1ydBZ3DLMeBG-YmxsG_W1DGaMCqJte2R2/view?usp=sharing",
+                fit: 5,
+                destaque: false,
+                avaliacao: "Candidato com aderência consistente ao perfil de Closer Pleno. Domina vendas consultivas e metodologias como GPCT e The Challenger Sale. Demonstra raciocínio estruturado para fechamento e antecipação de objeções. Trouxe excelentes indicadores de conversão (30–40% e 50% no primeiro mês), evidenciando foco em métricas e condução de decisão.",
+                tags: ["Closer Pleno", "GPCT", "The Challenger Sale", "Vendas Consultivas", "Foco em Metas"]
+            },
+            {
+                nome: "Alessandro Reis Luciani",
+                cargo: "CLOSER",
+                foto: "https://drive.google.com/file/d/1vp0K1q6YhdyjpxxqhtLMnjqZamZmApzg/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/alessandro-luciani-socialmedia/",
+                pitch: "Não aplicável no dia",
+                labelPocket: "Não Aplicável",
+                fit: 5,
+                destaque: true,
+                idiomas: "Inglês Fluente / Italiano e Espanhol Int.",
+                avaliacao: "Profissional de 42 anos com mais de 20 anos de experiência em vendas (B2C e transição sólida para B2B). Possui perfil altamente comercial, comunicação clara e postura sênior. Já liderou equipes de até 40 pessoas e demonstra alto senso de dono. Aprofundou conhecimentos em marketing digital, mas sua força reside no fechamento. Entende profundamente a dor do empresário (ICP natural da V4).",
+                tags: ["Tocou o sino 23/01", "Postura Sênior", "Visão Estratégica", "B2B / B2C", "Gestão de Equipes"]
+            },
+            {
+                nome: "Julia Trolezi",
+                cargo: "SDR",
+                foto: "https://drive.google.com/file/d/1gDvJ1nsOGxm8ktA0AbPCpyz57esUJffA/view?usp=sharing",
+                linkedin: "https://www.linkedin.com/in/julia-trolezi-4054102aa/",
+                pitch: "Não aplicável no dia",
+                labelPocket: "https://drive.google.com/file/d/1zP5QDtK83sI_oI5DdeI-B8bbvAsfqgCN/view?usp=sharing",
+                fit: 5,
+                destaque: false,
+                avaliacao: "Candidata de 23 anos, com experiência em vendas presenciais e online, atuando com serviços, produtos, financiamentos e reativação de clientes. Possui vivência em primeiro atendimento, entendimento da dor do cliente, uso de CRM (Eevo) e trabalho orientado a metas. Demonstra perfil disciplinado, foco em desenvolvimento pessoal e rotina consistente. Apresenta excelente potencial de desenvolvimento em ambiente meritocrático.",
+                tags: ["Foco em Metas", "CRM (Eevo)", "Resiliência", "Disciplina", "Vendas Online"]
+            }
+        ];
+
+        function getDriveDirectLink(url) {
+            if (!url) return "";
+            if (!url.includes("drive.google.com")) return url;
+            const regExp = /\/file\/d\/(.+?)\/(?:view|edit|usp=sharing)?/;
+            const match = url.match(regExp);
+            if (match && match[1]) return `https://lh3.googleusercontent.com/u/0/d/${match[1]}`;
+            return url;
+        }
+
+        function renderCandidates() {
+            const container = document.getElementById('candidates-container');
+            
+            if (candidates.length === 0) {
+                container.innerHTML = `
+                    <div class="w-full py-32 flex flex-col items-center justify-center border-2 border-dashed border-zinc-800 rounded-xl bg-zinc-900/10">
+                        <i data-lucide="alert-circle" size="48" class="text-zinc-700 mb-4 animate-pulse"></i>
+                        <h2 class="text-xl font-black uppercase tracking-tighter text-zinc-600">Shortlist Vazia</h2>
+                        <p class="text-[10px] uppercase font-bold tracking-[0.3em] text-zinc-500 mt-2">Pronta para receber novos talentos de elite</p>
+                    </div>`;
+                return;
+            }
+
+            container.innerHTML = candidates.map(c => {
+                const imageUrl = getDriveDirectLink(c.foto);
+                const isPocketDisabled = !c.labelPocket || c.labelPocket.toLowerCase().includes('não aplicável') || !c.labelPocket.startsWith('http');
+                
+                let stars = '';
+                for(let i=1; i<=5; i++) {
+                    stars += `<i data-lucide="star" class="${i <= c.fit ? 'fill-red-600 text-red-600' : 'text-zinc-700'}" style="width: 10px; height: 10px"></i>`;
+                }
+
+                return `
+                <div class="w-full bg-[#0a0a0a] border border-zinc-800 hover:border-red-600/50 transition-all duration-300 rounded-lg overflow-hidden shadow-xl mb-6">
+                    <div class="flex flex-col md:flex-row">
+                        <div class="w-full md:w-72 bg-zinc-900/50 p-6 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-zinc-800">
+                            <div class="relative w-32 h-32 md:w-40 md:h-40 mb-4">
+                                <div class="absolute -inset-1 ${c.destaque ? 'bg-red-600 animate-pulse-custom' : 'bg-red-600'} rounded-full blur opacity-20"></div>
+                                ${imageUrl ? `
+                                    <img src="${imageUrl}" alt="${c.nome}" class="relative w-full h-full object-cover rounded-full border-2 border-red-600 shadow-lg bg-zinc-800" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop'">
+                                ` : `
+                                    <div class="relative w-full h-full flex flex-col items-center justify-center rounded-full border-2 border-dashed border-zinc-700 bg-zinc-900 text-zinc-500">
+                                        <i data-lucide="user" size="40"></i>
+                                        <span class="text-[8px] mt-2 uppercase font-bold tracking-widest text-center px-4">Sem Foto</span>
+                                    </div>
+                                `}
+                                ${c.destaque ? `
+                                    <div class="absolute -top-2 -right-2 bg-red-600 p-2 rounded-full border border-black shadow-lg animate-bounce">
+                                        <i data-lucide="bell" class="text-white" style="width:16px; height:16px"></i>
+                                    </div>
+                                ` : ''}
+                            </div>
+                            
+                            <div class="flex flex-col gap-2 w-full">
+                                <a href="${c.linkedin}" target="_blank" class="w-full flex items-center justify-center gap-2 bg-zinc-800 hover:bg-red-700 transition-colors py-2 rounded text-[10px] font-bold uppercase tracking-tighter text-white">
+                                    <i data-lucide="linkedin" size="14"></i> Link / LinkedIn
+                                </a>
+                                <a href="${isPocketDisabled ? '#' : c.labelPocket}" ${isPocketDisabled ? 'onclick="return false"' : 'target="_blank"'} class="w-full flex items-center justify-center gap-2 transition-colors py-2 rounded text-[10px] font-bold uppercase tracking-tighter text-white ${isPocketDisabled ? 'bg-zinc-900 text-zinc-600 cursor-not-allowed' : 'bg-zinc-800 hover:bg-red-700'}">
+                                    <i data-lucide="clipboard-list" size="14"></i> LABEL POCKET
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 p-6 flex flex-col justify-between">
+                            <div>
+                                <div class="flex flex-col sm:grid sm:grid-cols-2 md:flex md:flex-row md:items-center justify-between mb-4 gap-4">
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <h2 class="text-2xl font-black uppercase text-white tracking-tight leading-none">${c.nome}</h2>
+                                            ${c.destaque ? `<span class="text-[9px] bg-red-600 text-white px-2 py-0.5 rounded-full font-black animate-pulse uppercase tracking-widest whitespace-nowrap">TOP PERFORMER</span>` : ''}
+                                        </div>
+                                        <p class="text-red-600 font-bold text-sm tracking-[0.2em] uppercase mt-1">${c.cargo}</p>
+                                    </div>
+                                    <div class="flex gap-6">
+                                        <div class="text-right">
+                                            <span class="block text-[10px] uppercase text-zinc-500 font-bold tracking-widest mb-1 whitespace-nowrap">PITCH DO ELEVADOR</span>
+                                            <span class="text-xs font-medium text-zinc-300">${c.pitch}</span>
+                                        </div>
+                                        <div class="text-right">
+                                            <span class="block text-[10px] uppercase text-zinc-500 font-bold tracking-widest mb-1 whitespace-nowrap">Fit Cultural</span>
+                                            <div class="flex gap-1 justify-end">${stars}</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-zinc-900/30 p-4 rounded border-l-2 border-red-600 mb-4">
+                                    <h3 class="text-[10px] uppercase font-black text-red-600 tracking-widest mb-2 flex items-center gap-2">
+                                        <i data-lucide="target" style="width:12px; height:12px"></i> Avaliação do Recrutador
+                                    </h3>
+                                    <p class="text-sm text-zinc-400 leading-relaxed italic whitespace-pre-line">"${c.avaliacao}"</p>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-2 items-center">
+                                ${c.tags.map(tag => `
+                                    <span class="text-[9px] font-bold uppercase tracking-widest px-2 py-1 rounded border ${tag.includes('Atenção') || tag.includes('Presença') || tag.includes('Vendas') || tag.includes('Empreendedor') ? 'bg-red-600 text-white border-red-500' : 'bg-red-950/20 text-red-500 border-red-900/30'}">
+                                        ${tag}
+                                    </span>
+                                `).join('')}
+                                ${c.idiomas ? `
+                                    <div class="flex items-center gap-1 ml-auto text-zinc-500">
+                                        <i data-lucide="globe" size="12"></i>
+                                        <span class="text-[9px] font-bold uppercase tracking-widest">${c.idiomas}</span>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    </div>
+                </div>`;
+            }).join('');
+
+            // Initialize Lucide icons after rendering
+            lucide.createIcons();
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', renderCandidates);
+    </script>
+</body>
+</html>
